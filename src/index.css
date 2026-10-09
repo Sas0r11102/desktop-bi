@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════
+   DESIGN TOKENS — FinTech Light Theme
+   ═══════════════════════════════════════════ */
+:root {
+  --canvas: #CBD5E1;
+  --surface-1: #FFFFFF;
+  --surface-2: #F8FAFC;
+  --surface-3: #E2E8F0;
+  --surface-elevated: #FFFFFF;
+
+  --ink-primary: #0F172A;
+  --ink-secondary: #475569;
+  --ink-tertiary: #94A3B8;
+  --ink-faint: #CBD5E1;
+
+  --accent-green: #10B981;
+  --accent-green-light: #34D399;
+  --accent-green-pale: #A7F3D0;
+  --accent-red: #EF4444;
+  --accent-red-light: #F87171;
+  --accent-purple: #A78BFA;
+  --accent-lavender: #B4A7D6;
+  --accent-blue: #60A5FA;
+  --accent-yellow: #FBBF24;
+
+  --gradient-hero: linear-gradient(135deg, #65A30D 0%, #A3E635 40%, #D9F99D 100%);
+  --gradient-visa: linear-gradient(135deg, #4338CA 0%, #6366F1 50%, #818CF8 100%);
+
+  --shadow-card: 0 1px 3px rgba(15,23,42,0.06), 0 6px 20px rgba(15,23,42,0.04);
+  --shadow-elevated: 0 8px 32px rgba(15,23,42,0.10);
+
+  --hairline: #E2E8F0;
+  --hairline-strong: #CBD5E1;
+
+  --font-display: 'Plus Jakarta Sans', 'Inter', 'Noto Sans SC', system-ui, sans-serif;
+  --font-sans: 'Inter', 'Noto Sans SC', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+body {
+  background: var(--canvas);
+  color: var(--ink-secondary);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(16,185,129,0.15);
+  color: var(--ink-primary);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--hairline-strong); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--ink-tertiary); }

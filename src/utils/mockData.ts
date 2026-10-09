@@ -1,0 +1,75 @@
+import type { Dataset } from "../types";
+export type { Dataset } from "../types";
+
+export const CHART_COLORS = [
+  '#A78BFA', '#60A5FA', '#22D3EE', '#10B981', '#FBBF24',
+  '#F97316', '#EF4444', '#EC4899', '#8B5CF6', '#6366F1',
+];
+
+export const mockData: Dataset = {
+  columns: [
+    { name: 'Date', type: 'date' },
+    { name: 'Description', type: 'string' },
+    { name: 'Category', type: 'string' },
+    { name: 'Amount', type: 'number' },
+    { name: 'Status', type: 'string' },
+  ],
+  rows: [
+    { Date: '2026-10-03', Description: 'Amazon Purchase', Category: 'Shopping', Amount: -89.99, Status: 'Completed' },
+    { Date: '2026-10-03', Description: 'Salary Deposit', Category: 'Income', Amount: 5200.00, Status: 'Completed' },
+    { Date: '2026-10-02', Description: 'Uber Eats', Category: 'Food', Amount: -32.50, Status: 'Completed' },
+    { Date: '2026-10-01', Description: 'Rent Payment', Category: 'Housing', Amount: -1800.00, Status: 'Completed' },
+    { Date: '2026-09-30', Description: 'App Store', Category: 'Software', Amount: -9.99, Status: 'Completed' },
+    { Date: '2026-09-28', Description: 'Freelance Payment', Category: 'Income', Amount: 850.00, Status: 'Pending' },
+    { Date: '2026-09-28', Description: 'Starbucks', Category: 'Food', Amount: -6.75, Status: 'Completed' },
+    { Date: '2026-09-27', Description: 'Gas Station', Category: 'Transport', Amount: -45.20, Status: 'Completed' },
+    { Date: '2026-09-26', Description: 'Client Invoice #1042', Category: 'Income', Amount: 3200.00, Status: 'Completed' },
+    { Date: '2026-09-25', Description: 'Gym Membership', Category: 'Health', Amount: -49.99, Status: 'Completed' },
+    { Date: '2026-09-24', Description: 'Electricity Bill', Category: 'Utilities', Amount: -128.50, Status: 'Completed' },
+    { Date: '2026-09-23', Description: 'Book Purchase', Category: 'Education', Amount: -24.99, Status: 'Completed' },
+  ],
+  rowCount: 12,
+  sourceFile: 'sample_data.csv',
+  totalBalance: 120456.50,
+  income: 2456,
+  expense: 1124,
+  netProfit: 1332,
+  orders: 384,
+  revenueFlow: [
+    { month: 'Jan', revenue: 4200, expense: 3100 },
+    { month: 'Feb', revenue: 3800, expense: 2900 },
+    { month: 'Mar', revenue: 5100, expense: 3400 },
+    { month: 'Apr', revenue: 4600, expense: 3200 },
+    { month: 'May', revenue: 5800, expense: 3600 },
+    { month: 'Jun', revenue: 6200, expense: 3800 },
+    { month: 'Jul', revenue: 5400, expense: 3500 },
+    { month: 'Aug', revenue: 7100, expense: 4200 },
+    { month: 'Sep', revenue: 6800, expense: 3900 },
+    { month: 'Oct', revenue: 7500, expense: 4100 },
+    { month: 'Nov', revenue: 8200, expense: 4500 },
+    { month: 'Dec', revenue: 7800, expense: 4300 },
+  ],
+  expenseSplit: [
+    { name: 'Housing', value: 450, color: '#A78BFA' },
+    { name: 'Food', value: 280, color: '#60A5FA' },
+    { name: 'Transport', value: 150, color: '#22D3EE' },
+    { name: 'Shopping', value: 120, color: '#10B981' },
+    { name: 'Other', value: 124, color: '#FBBF24' },
+  ],
+  transactions: [
+    { icon: '🛒', name: 'Amazon Purchase', date: 'Today, 2:30 PM', amount: -89.99, type: 'negative' },
+    { icon: '💰', name: 'Salary Deposit', date: 'Today, 9:00 AM', amount: 5200.00, type: 'positive' },
+    { icon: '🍔', name: 'Uber Eats', date: 'Yesterday', amount: -32.50, type: 'negative' },
+    { icon: '🏠', name: 'Rent Payment', date: 'Oct 1', amount: -1800.00, type: 'negative' },
+    { icon: '📱', name: 'App Store', date: 'Sep 30', amount: -9.99, type: 'negative' },
+    { icon: '💼', name: 'Freelance Payment', date: 'Sep 28', amount: 850.00, type: 'positive' },
+    { icon: '☕', name: 'Starbucks', date: 'Sep 28', amount: -6.75, type: 'negative' },
+  ],
+  subscriptions: [
+    { icon: '🎬', name: 'Netflix', period: 'Monthly', amount: '$15.99' },
+    { icon: '🎵', name: 'Spotify', period: 'Monthly', amount: '$9.99' },
+    { icon: '☁️', name: 'AWS', period: 'Monthly', amount: '$42.30' },
+    { icon: '💻', name: 'GitHub Pro', period: 'Monthly', amount: '$4.00' },
+    { icon: '📝', name: 'Notion', period: 'Yearly', amount: '$96.00' },
+  ],
+};

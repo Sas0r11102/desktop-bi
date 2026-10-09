@@ -1,0 +1,51 @@
+SKU,ProductName,Category,Warehouse,Quantity,UnitCost,TotalValue,Supplier,LastRestock,Status,IsActive
+SKU-100001,Product-A1,Groceries,WH-Guangzhou,2141,783.81,1678137.21,Supplier-D,2026-03-11,In Stock,False
+SKU-100002,Product-B1,Groceries,WH-Beijing,3766,767.4,2890028.4,Supplier-C,2026-01-05,Discontinued,True
+SKU-100003,Product-C1,Electronics,WH-Chengdu,35,721.65,25257.75,Supplier-B,2026-04-16,Low Stock,False
+SKU-100004,Product-D1,Furniture,WH-Shanghai,635,433.23,275101.05,Supplier-D,2026-06-22,In Stock,False
+SKU-100005,Product-E1,Cosmetics,WH-Guangzhou,3168,145.86,462084.48,Supplier-A,2026-02-01,In Stock,True
+SKU-100006,Product-F1,Furniture,WH-Shanghai,1814,595.8,1080781.2,Supplier-C,2026-06-24,Discontinued,False
+SKU-100007,Product-G1,Apparel,WH-Shanghai,2483,647.69,1608214.27,Supplier-B,2026-03-01,Discontinued,False
+SKU-100008,Product-H1,Electronics,WH-Guangzhou,4037,724.08,2923110.96,Supplier-E,2026-02-23,In Stock,False
+SKU-100009,Product-I1,Electronics,WH-Guangzhou,4662,402.76,1877667.12,Supplier-B,2026-05-22,In Stock,True
+SKU-100010,Product-J1,Electronics,WH-Beijing,532,106.31,56556.92,Supplier-E,2026-02-28,Out of Stock,False
+SKU-100011,Product-K1,Apparel,WH-Shanghai,4365,493.49,2154083.85,Supplier-E,2026-04-27,In Stock,False
+SKU-100012,Product-L1,Electronics,WH-Guangzhou,3543,676.25,2395953.75,Supplier-D,2026-03-12,In Stock,False
+SKU-100013,Product-M1,Furniture,WH-Guangzhou,4237,608.42,2577875.54,Supplier-B,2026-01-13,In Stock,False
+SKU-100014,Product-N1,Cosmetics,WH-Chengdu,2590,9.1,23569.0,Supplier-B,2026-03-27,In Stock,True
+SKU-100015,Product-O1,Apparel,WH-Chengdu,609,734.01,447012.09,Supplier-B,2026-02-12,In Stock,True
+SKU-100016,Product-P1,Electronics,WH-Shanghai,3931,348.4,1369560.4,Supplier-A,2026-06-01,Out of Stock,False
+SKU-100017,Product-Q1,Groceries,WH-Beijing,883,381.49,336855.67,Supplier-C,2026-01-14,Out of Stock,True
+SKU-100018,Product-R1,Electronics,WH-Chengdu,783,502.15,393183.45,Supplier-E,2026-02-01,In Stock,True
+SKU-100019,Product-S1,Electronics,WH-Chengdu,2566,712.62,1828582.92,Supplier-A,2026-02-02,In Stock,False
+SKU-100020,Product-T1,Electronics,WH-Guangzhou,3537,57.3,202670.1,Supplier-A,2026-05-24,In Stock,False
+SKU-100021,Product-U1,Furniture,WH-Shanghai,3367,190.32,640807.44,Supplier-E,2026-06-18,Low Stock,False
+SKU-100022,Product-V1,Furniture,WH-Chengdu,3507,704.55,2470856.85,Supplier-E,2026-01-26,In Stock,True
+SKU-100023,Product-W1,Furniture,WH-Guangzhou,4815,158.02,760866.3,Supplier-A,2026-01-04,Low Stock,True
+SKU-100024,Product-X1,Cosmetics,WH-Beijing,4695,105.16,493726.2,Supplier-E,2026-03-07,In Stock,False
+SKU-100025,Product-Y1,Cosmetics,WH-Chengdu,1523,198.31,302026.13,Supplier-A,2026-01-16,In Stock,False
+SKU-100026,Product-Z1,Cosmetics,WH-Guangzhou,2549,469.01,1195506.49,Supplier-E,2026-02-07,In Stock,False
+SKU-100027,Product-A2,Cosmetics,WH-Guangzhou,2384,298.22,710956.48,Supplier-A,2026-05-13,Low Stock,True
+SKU-100028,Product-B2,Electronics,WH-Beijing,4154,656.25,2726062.5,Supplier-E,2026-01-14,In Stock,True
+SKU-100029,Product-C2,Apparel,WH-Beijing,560,276.53,154856.8,Supplier-D,2026-06-27,Low Stock,False
+SKU-100030,Product-D2,Cosmetics,WH-Guangzhou,4738,455.05,2156026.9,Supplier-C,2026-06-07,In Stock,False
+SKU-100031,Product-E2,Apparel,WH-Shanghai,3721,701.5,2610281.5,Supplier-A,2026-05-07,In Stock,True
+SKU-100032,Product-F2,Apparel,WH-Beijing,3821,501.02,1914397.42,Supplier-B,2026-05-04,Low Stock,False
+SKU-100033,Product-G2,Furniture,WH-Beijing,3279,151.47,496670.13,Supplier-A,2026-04-03,In Stock,False
+SKU-100034,Product-H2,Electronics,WH-Shanghai,1166,236.01,275187.66,Supplier-B,2026-06-11,Low Stock,False
+SKU-100035,Product-I2,Electronics,WH-Shanghai,1631,162.27,264662.37,Supplier-B,2026-02-26,Out of Stock,True
+SKU-100036,Product-J2,Groceries,WH-Beijing,1462,160.81,235104.22,Supplier-B,2026-03-09,Discontinued,True
+SKU-100037,Product-K2,Apparel,WH-Chengdu,909,274.01,249075.09,Supplier-B,2026-03-20,In Stock,False
+SKU-100038,Product-L2,Groceries,WH-Beijing,4316,781.8,3374248.8,Supplier-E,2026-04-22,Out of Stock,True
+SKU-100039,Product-M2,Electronics,WH-Beijing,1071,636.94,682162.74,Supplier-B,2026-05-17,In Stock,False
+SKU-100040,Product-N2,Groceries,WH-Chengdu,2003,737.21,1476631.63,Supplier-E,2026-05-31,In Stock,False
+SKU-100041,Product-O2,Apparel,WH-Guangzhou,2024,47.34,95816.16,Supplier-C,2026-02-02,Out of Stock,False
+SKU-100042,Product-P2,Apparel,WH-Shanghai,3855,633.84,2443453.2,Supplier-E,2026-01-17,In Stock,False
+SKU-100043,Product-Q2,Cosmetics,WH-Guangzhou,4084,417.52,1705151.68,Supplier-B,2026-03-24,Low Stock,False
+SKU-100044,Product-R2,Furniture,WH-Chengdu,2198,467.04,1026553.92,Supplier-E,2026-06-16,In Stock,True
+SKU-100045,Product-S2,Apparel,WH-Chengdu,1920,319.74,613900.8,Supplier-C,2026-04-19,Out of Stock,True
+SKU-100046,Product-T2,Groceries,WH-Guangzhou,4510,72.38,326433.8,Supplier-A,2026-03-17,In Stock,False
+SKU-100047,Product-U2,Apparel,WH-Shanghai,3811,412.25,1571084.75,Supplier-C,2026-04-20,In Stock,False
+SKU-100048,Product-V2,Furniture,WH-Guangzhou,4075,257.03,1047397.25,Supplier-D,2026-01-07,In Stock,True
+SKU-100049,Product-W2,Groceries,WH-Shanghai,2941,721.67,2122431.47,Supplier-C,2026-05-09,Low Stock,True
+SKU-100050,Product-X2,Groceries,WH-Beijing,806,99.28,80019.68,Supplier-C,2026-01-10,Low Stock,False
