@@ -41,15 +41,8 @@
         "installerIcon": "icons/icon.ico",
         "headerImage": null,
         "sidebarImage": null,
-        "compression": "lzma",
-        "installDir": "$LOCALAPPDATA\\Desktop BI"
+        "compression": "lzma"
       }
-    },
-    "shortcuts": [
-      {
-        "name": "Desktop BI",
-        "description": "本地数据可视化分析工具"
-      }
-    ]
+    }
   }
 }
