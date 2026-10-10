@@ -221,10 +221,10 @@ fn load_excel(path: &PathBuf) -> Result<Dataset, String> {
                 calamine::Data::Empty => serde_json::Value::Null,
                 calamine::Data::String(s) => serde_json::Value::String(s.clone()),
                 calamine::Data::Float(f) => serde_json::Value::Number(
-                    serde_json::Number::from_f64(f).unwrap_or(serde_json::Number::from(0)),
+                    serde_json::Number::from_f64(*f).unwrap_or(serde_json::Number::from(0)),
                 ),
-                calamine::Data::Int(i) => serde_json::Value::Number(i.into()),
-                calamine::Data::Bool(b) => serde_json::Value::Bool(b),
+                calamine::Data::Int(i) => serde_json::Value::Number((*i).into()),
+                calamine::Data::Bool(b) => serde_json::Value::Bool(*b),
                 calamine::Data::DateTime(dt) => {
                     serde_json::Value::String(dt.to_string())
                 }
