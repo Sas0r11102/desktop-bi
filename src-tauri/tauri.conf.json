@@ -35,13 +35,14 @@
     "windows": {
       "nsis": {
         "installMode": "currentUser",
-        "displayLanguageSelector": true,
+        "displayLanguageSelector": false,
         "languages": ["SimpChinese", "English"],
         "template": null,
         "installerIcon": "icons/icon.ico",
         "headerImage": null,
         "sidebarImage": null,
-        "compression": "lzma"
+        "compression": "lzma",
+        "installDir": "$LOCALAPPDATA\\Desktop BI"
       }
     },
     "shortcuts": [
