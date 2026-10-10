@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+### 2026-10-09 — Phase 3 推进：GitHub 推送准备
+
+- 视觉微调：Hero 渐变改为荧光黄绿（#65A30D → #A3E635 → #D9F99D）
+- 卡片质感改为玻璃拟态（bg-white/60 + backdrop-blur + 高光边框）
+- 圆角加大：大卡片 24px / 小卡片 16px
+- 背景加深：#F1F5F9 → #CBD5E1
+- 前端交互测试：表格搜索 ✅ | 响应式 1920/1440 ✅ | 1024 降级 ⚠️ | 768 截断 ❌
+- Git 仓库初始化，64 文件提交
+- PUSH-GUIDE.md 生成，含 GitHub 推送命令与 Windows 测试清单
+- 阻塞项：T3.4 Windows 安装包实测 → 待 GitHub Actions 构建后用户实测
+
 ### 2026-10-03 — Phase 2 全部完成
 
 - T2.1 脚手架搭建 ✅ Tauri + Vite + React + TypeScript + TailwindCSS + ECharts

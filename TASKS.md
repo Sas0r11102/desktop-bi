@@ -68,7 +68,9 @@
   - 触发条件：tag push (v*) 或手动 dispatch
   - 环境：windows-latest
   - 自动构建、打包、创建 Release Draft
-- [ ] T3.4 安装包测试（Windows 10/11 安装、启动、功能验证）— 待 Windows 环境实测
+- [ ] T3.4 安装包测试（Windows 10/11 安装、启动、功能验证）— 🔄 GitHub Actions 构建后 Windows 实测
+  - Git 仓库已初始化，64 文件提交
+  - PUSH-GUIDE.md 已生成，含推送命令与测试清单
 - [x] T3.5 规格评审（逐条对照 PRD 验收标准）✅
   - 7/8 验收标准已满足，1/8 待 Windows 实测
   - PRD.md 已更新：浅色主题、技术约束同步
