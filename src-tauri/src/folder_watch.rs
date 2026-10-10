@@ -26,11 +26,9 @@ pub fn start_watcher(app: tauri::AppHandle, path: String) -> Result<(), String> 
     }
 
     let (tx, rx) = mpsc::channel();
-    let app_clone = app.clone();
-
     // Spawn watcher thread
     std::thread::spawn(move || {
-        let mut watcher = RecommendedWatcher::new(
+        let watcher = RecommendedWatcher::new(
             move |res: Result<notify::Event, notify::Error>| {
                 if let Ok(event) = res {
                     for p in &event.paths {

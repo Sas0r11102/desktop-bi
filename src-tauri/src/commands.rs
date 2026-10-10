@@ -1,6 +1,8 @@
 use serde::{Deserialize, Serialize};
 use std::path::PathBuf;
 use std::fs;
+use std::io::BufReader;
+use std::fs::File;
 
 #[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct ColumnMeta {
@@ -175,7 +177,7 @@ fn load_csv(path: &PathBuf) -> Result<Dataset, String> {
 fn load_excel(path: &PathBuf) -> Result<Dataset, String> {
     use calamine::{open_workbook, Reader, Xlsx};
 
-    let mut workbook: Xlsx<_> = open_workbook(path).map_err(|e| e.to_string())?;
+    let mut workbook = open_workbook::<Xlsx<BufReader<File>>, _>(path).map_err(|e| e.to_string())?;
 
     let sheets = workbook.sheet_names().to_vec();
     if sheets.is_empty() {
@@ -219,10 +221,10 @@ fn load_excel(path: &PathBuf) -> Result<Dataset, String> {
                 calamine::Data::Empty => serde_json::Value::Null,
                 calamine::Data::String(s) => serde_json::Value::String(s.clone()),
                 calamine::Data::Float(f) => serde_json::Value::Number(
-                    serde_json::Number::from_f64(*f).unwrap_or(serde_json::Number::from(0)),
+                    serde_json::Number::from_f64(f).unwrap_or(serde_json::Number::from(0)),
                 ),
-                calamine::Data::Int(i) => serde_json::Value::Number((*i).into()),
-                calamine::Data::Bool(b) => serde_json::Value::Bool(*b),
+                calamine::Data::Int(i) => serde_json::Value::Number(i.into()),
+                calamine::Data::Bool(b) => serde_json::Value::Bool(b),
                 calamine::Data::DateTime(dt) => {
                     serde_json::Value::String(dt.to_string())
                 }
